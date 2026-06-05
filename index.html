@@ -7,15 +7,19 @@
   <meta name="description" content="TalentMind анализирует записи собеседований, оценивает soft skills и культурную совместимость по 54 параметрам. 5 интервью бесплатно.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="#" class="logo">
-        <span class="logo__mark">TM</span>
-        <span class="logo__text">TalentMind</span>
+        <svg class="logo__icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="#F0F2F5"/>
+          <path d="M8 22V10h3.5l4.5 7.5L20.5 10H24v12h-2.8v-7.2L17 22h-2L10.8 14.8V22H8z" fill="#76BC21"/>
+          <circle cx="24" cy="8" r="3" fill="#00ADEF"/>
+        </svg>
+        <span class="logo__text"><span class="logo__talent">TALENT</span> <span class="logo__mind">MIND</span></span>
       </a>
       <nav class="nav" aria-label="Основная навигация">
         <a href="#product">Продукт</a>
@@ -26,7 +30,7 @@
         <a href="#pricing">Тарифы</a>
         <a href="#contacts">Контакты</a>
       </nav>
-      <a href="#pricing" class="btn btn--sm btn--primary header__cta">5 интервью бесплатно</a>
+      <a href="#pricing" class="btn btn--sm btn--primary header__cta">Попробовать бесплатно</a>
       <button class="burger" aria-label="Меню" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -36,68 +40,54 @@
   <main>
     <!-- BLOCK 1: HERO -->
     <section class="hero" id="hero">
-      <div class="container hero__grid">
-        <div class="hero__content">
-          <p class="eyebrow">ИИ-платформа для оценки soft skills и культурной совместимости</p>
-          <h1>Анализируйте собеседования.<br>Нанимайте по ДНК компании.</h1>
-          <p class="lead">TalentMind анализирует аудио- и видеозаписи реальных интервью, оценивает soft skills кандидатов и сопоставляет их с культурным кодом вашей компании по <strong>54 параметрам</strong>. Решения на основе данных — не интуиции.</p>
-          <ul class="hero__bullets">
-            <li><span class="bullet-icon">54</span><span><strong>54 параметра культуры</strong> — сравнение с уникальным профилем компании</span></li>
-            <li><span class="bullet-icon">AI</span><span><strong>ИИ-Ассистент</strong> — мгновенный доступ к контексту любого интервью в чате</span></li>
-            <li><span class="bullet-icon">₽</span><span><strong>ROI до 12 млн ₽/год</strong> — при 100 наймах за счёт сокращения Time-to-Hire</span></li>
-          </ul>
-          <div class="hero__actions">
-            <a href="#pricing" class="btn btn--primary btn--lg">Получить 5 интервью бесплатно</a>
-            <a href="#contacts" class="btn btn--outline btn--lg">Записаться на демо</a>
-          </div>
-          <p class="hero__note">Регистрация за 2 минуты. Без привязки карты. Первые 5 интервью — сразу после регистрации.</p>
-          <div class="hero__stats">
-            <div class="stat"><strong>89%</strong><span>неудачных наймов — из-за soft skills <em>(Leadership IQ)</em></span></div>
-            <div class="stat"><strong>700 000 ₽</strong><span>средняя цена ошибки найма <em>(hh.ru)</em></span></div>
-            <div class="stat"><strong>30%</strong><span>уходят в первые 90 дней <em>(SHRM)</em></span></div>
-          </div>
-        </div>
-        <div class="hero__visual">
-          <div class="mockup mockup--dashboard">
-            <div class="mockup__bar">
-              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-              <span class="mockup__title">Личный кабинет — Анализ интервью</span>
+      <div class="container hero__centered">
+        <div class="ui-preview">
+          <div class="ui-preview__sidebar">
+            <div class="ui-preview__logo-mini">
+              <svg width="24" height="24" viewBox="0 0 32 32" fill="none"><path d="M8 22V10h3.5l4.5 7.5L20.5 10H24v12h-2.8v-7.2L17 22h-2L10.8 14.8V22H8z" fill="#76BC21"/><circle cx="24" cy="8" r="3" fill="#00ADEF"/></svg>
+              <span>TALENT MIND</span>
             </div>
-            <div class="mockup__body">
-              <div class="upload-zone">
-                <div class="upload-zone__icon">↑</div>
-                <p>Перетащите запись интервью</p>
-                <span class="upload-zone__formats">MP3 · MP4 · Контур.Толк</span>
-                <div class="progress-bar"><div class="progress-bar__fill" style="width:78%"></div></div>
-                <span class="progress-label">Анализ: 78%</span>
+            <div class="ui-nav-item">AI Assistant</div>
+            <div class="ui-nav-item ui-nav-item--active">Main</div>
+            <div class="ui-nav-item">Vacancies</div>
+          </div>
+          <div class="ui-preview__main">
+            <p class="ui-preview__welcome">Welcome to <strong>TALENT MIND</strong></p>
+            <div class="ui-action-cards">
+              <div class="ui-action-card ui-action-card--green">
+                <span class="ui-action-card__icon">☁</span>
+                <strong>Load the interview</strong>
+                <small>Quick report on soft skills</small>
               </div>
-              <div class="candidate-list">
-                <div class="candidate-card candidate-card--active">
-                  <div class="candidate-card__avatar">АК</div>
-                  <div><strong>Алексей К.</strong><br><small>IT Project Manager</small></div>
-                  <span class="badge badge--green">77%</span>
-                </div>
-                <div class="candidate-card">
-                  <div class="candidate-card__avatar">МС</div>
-                  <div><strong>Мария С.</strong><br><small>Product Owner</small></div>
-                  <span class="badge">62%</span>
-                </div>
-                <div class="candidate-card">
-                  <div class="candidate-card__avatar">ДВ</div>
-                  <div><strong>Дмитрий В.</strong><br><small>Team Lead</small></div>
-                  <span class="badge">84%</span>
-                </div>
+              <div class="ui-action-card ui-action-card--ai">
+                <span class="ui-action-card__glow"></span>
+                <strong>AI Assistant</strong>
+                <small>Context at any stage</small>
+              </div>
+              <div class="ui-action-card ui-action-card--cyan">
+                <span class="ui-action-card__icon">👥</span>
+                <strong>Compare candidates</strong>
+                <small>Choose the best</small>
               </div>
             </div>
-            <div class="floating-badge">
-              <span>Культурная совместимость</span>
-              <strong>77%</strong>
+            <p class="ui-preview__section-title">New Reports</p>
+            <div class="ui-reports-grid">
+              <div class="ui-report-card"><strong>Алексей К.</strong><span class="ui-report-card__desc">Strong leadership, 77% fit</span><span class="ui-pill ui-pill--cyan">Interview</span><span class="ui-score ui-score--high">77%</span></div>
+              <div class="ui-report-card"><strong>Анна С.</strong><span class="ui-report-card__desc">Good communication</span><span class="ui-pill ui-pill--green">Offer</span><span class="ui-score ui-score--high">88%</span></div>
+              <div class="ui-report-card"><strong>Мария Л.</strong><span class="ui-report-card__desc">Team player</span><span class="ui-pill ui-pill--cyan">Interview</span><span class="ui-score ui-score--mid">62%</span></div>
+              <div class="ui-report-card"><strong>Дмитрий В.</strong><span class="ui-report-card__desc">Technical depth</span><span class="ui-pill ui-pill--hired">Hired</span><span class="ui-score ui-score--high">84%</span></div>
             </div>
           </div>
         </div>
+        <h1>Расшифруйте талант<br>в каждом разговоре</h1>
+        <p class="lead">Первый ИИ, который оценивает soft skills и культурную совместимость напрямую из записей живых интервью — по <strong>54 параметрам</strong> ДНК вашей компании.</p>
+        <div class="hero__actions">
+          <a href="#pricing" class="btn btn--primary btn--lg">Получить 5 интервью бесплатно</a>
+          <a href="#contacts" class="btn btn--ghost btn--lg">Записаться на демо</a>
+        </div>
+        <p class="hero__note">Регистрация за 2 минуты · Без привязки карты · 5 интервью сразу после регистрации</p>
       </div>
       <div class="trust-strip container">
-        <span>Интеграции:</span>
         <div class="trust-logos">
           <span>Хантфлоу</span>
           <span>Talantix</span>
@@ -192,7 +182,7 @@
     </section>
 
     <!-- BLOCK 4: AI ASSISTANT -->
-    <section class="section section--dark" id="assistant">
+    <section class="section section--soft" id="assistant">
       <div class="container assistant__grid">
         <div class="assistant__info">
           <h2>Спросите воронку — получите ответ за секунды</h2>
@@ -235,10 +225,40 @@
     </section>
 
     <!-- BLOCK 5: REPORT -->
-    <section class="section" id="report">
+    <section class="section section--gray" id="report">
       <div class="container">
-        <h2>Отчёт, с которым можно идти на комитет по найму</h2>
-        <p class="section-desc">Каждый анализ — структурированная карточка с аргументами, рисками и рекомендациями.</p>
+        <h2 class="text-center">Нанимайте по сути, а не только по резюме</h2>
+        <p class="section-desc text-center mx-auto">Структурированные отчёты с оценкой soft skills, культурной совместимости и рисков — как в вашем личном кабинете.</p>
+        <div class="vacancy-preview">
+          <div class="vacancy-preview__toolbar">
+            <button class="btn btn--primary btn--sm" type="button">+ Load the interview</button>
+            <div class="vacancy-preview__search">🔍 Search candidates</div>
+          </div>
+          <div class="tm-candidate tm-candidate--featured">
+            <div class="tm-candidate__score tm-candidate__score--high">77%</div>
+            <div class="tm-candidate__body">
+              <h3>Алексей К. <span>IT Project Manager</span></h3>
+              <p>Опыт управления командой 8+ человек. Высокая «мы-концепция» (68%). STAR-формат в 89% ответов. Зона внимания: клиентоориентированность 41%.</p>
+              <a href="#" class="tm-candidate__more">Learn more →</a>
+            </div>
+          </div>
+          <div class="tm-candidate">
+            <div class="tm-candidate__score tm-candidate__score--mid">60%</div>
+            <div class="tm-candidate__body">
+              <h3>София М. <span>Product Owner</span></h3>
+              <p>Сильная коммуникация, но склонность к extended analysis. Адаптивность 6/10 — проверить на финале.</p>
+              <a href="#" class="tm-candidate__more">Learn more →</a>
+            </div>
+          </div>
+          <div class="tm-candidate">
+            <div class="tm-candidate__score tm-candidate__score--low">39%</div>
+            <div class="tm-candidate__body">
+              <h3>Оливия Д. <span>Business Analyst</span></h3>
+              <p>Низкое соответствие культурному профилю. Индивидуалистический стиль лидерства, конфликт с параметром «Командная работа».</p>
+              <a href="#" class="tm-candidate__more">Learn more →</a>
+            </div>
+          </div>
+        </div>
         <div class="report-card">
           <div class="report-card__header">
             <div class="report-card__avatar">АК</div>
@@ -324,10 +344,10 @@
     </section>
 
     <!-- BLOCK 6: ROI -->
-    <section class="section section--roi" id="roi">
+    <section class="section section--gray" id="roi">
       <div class="container">
-        <h2>Экономия 10–12 млн ₽ в год при 100 наймах</h2>
-        <p class="section-desc section-desc--light">TalentMind окупается с первого месяца. Вот что меняется, когда решения принимаются на основе данных.</p>
+        <h2 class="text-center">Экономия 10–12 млн ₽ в год при 100 наймах</h2>
+        <p class="section-desc text-center mx-auto">TalentMind окупается с первого месяца. Вот что меняется, когда решения принимаются на основе данных.</p>
         <div class="roi-metrics">
           <div class="roi-metric">
             <h3>Время рекрутера на вакансию</h3>
@@ -535,9 +555,12 @@
   <footer class="footer">
     <div class="container footer__grid">
       <div class="footer__brand">
-        <a href="#" class="logo">
-          <span class="logo__mark">TM</span>
-          <span class="logo__text">TalentMind</span>
+        <a href="#" class="logo logo--footer">
+          <svg class="logo__icon" width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M8 22V10h3.5l4.5 7.5L20.5 10H24v12h-2.8v-7.2L17 22h-2L10.8 14.8V22H8z" fill="#76BC21"/>
+            <circle cx="24" cy="8" r="3" fill="#00ADEF"/>
+          </svg>
+          <span class="logo__text"><span class="logo__talent">TALENT</span> <span class="logo__mind">MIND</span></span>
         </a>
         <p>ИИ-платформа оценки soft skills и культурной совместимости</p>
       </div>
