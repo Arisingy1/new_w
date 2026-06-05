@@ -12,8 +12,8 @@
   --shadow-lg: 0 20px 56px rgba(24, 56, 51, 0.12);
   --radius: 24px;
   --radius-sm: 12px;
-  --font-body: 'Geologica', system-ui, sans-serif;
-  --font-heading: 'Unbounded', system-ui, sans-serif;
+  --font-body: 'Geologica', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-heading: 'Unbounded', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --header-h: 76px;
 }
 
@@ -28,6 +28,11 @@ body {
   background: var(--white);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+}
+
+/* Fallback если Google Fonts не загрузились */
+@supports not (font-variation-settings: normal) {
+  body { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; }
 }
 
 img { max-width: 100%; display: block; }
