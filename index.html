@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TalentMind — ИИ-анализ soft skills и культурной совместимости</title>
+  <meta name="description" content="TalentMind анализирует записи собеседований, оценивает soft skills и культурную совместимость по 54 параметрам. 5 интервью бесплатно.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <span class="logo__mark">TM</span>
+        <span class="logo__text">TalentMind</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#product">Продукт</a>
+        <a href="#assistant">ИИ-Ассистент</a>
+        <a href="#report">Отчёты</a>
+        <a href="#roi">ROI</a>
+        <a href="#security">Безопасность</a>
+        <a href="#pricing">Тарифы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <a href="#pricing" class="btn btn--sm btn--primary header__cta">5 интервью бесплатно</a>
+      <button class="burger" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- BLOCK 1: HERO -->
+    <section class="hero" id="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow">ИИ-платформа для оценки soft skills и культурной совместимости</p>
+          <h1>Анализируйте собеседования.<br>Нанимайте по ДНК компании.</h1>
+          <p class="lead">TalentMind анализирует аудио- и видеозаписи реальных интервью, оценивает soft skills кандидатов и сопоставляет их с культурным кодом вашей компании по <strong>54 параметрам</strong>. Решения на основе данных — не интуиции.</p>
+          <ul class="hero__bullets">
+            <li><span class="bullet-icon">54</span><span><strong>54 параметра культуры</strong> — сравнение с уникальным профилем компании</span></li>
+            <li><span class="bullet-icon">AI</span><span><strong>ИИ-Ассистент</strong> — мгновенный доступ к контексту любого интервью в чате</span></li>
+            <li><span class="bullet-icon">₽</span><span><strong>ROI до 12 млн ₽/год</strong> — при 100 наймах за счёт сокращения Time-to-Hire</span></li>
+          </ul>
+          <div class="hero__actions">
+            <a href="#pricing" class="btn btn--primary btn--lg">Получить 5 интервью бесплатно</a>
+            <a href="#contacts" class="btn btn--outline btn--lg">Записаться на демо</a>
+          </div>
+          <p class="hero__note">Регистрация за 2 минуты. Без привязки карты. Первые 5 интервью — сразу после регистрации.</p>
+          <div class="hero__stats">
+            <div class="stat"><strong>89%</strong><span>неудачных наймов — из-за soft skills <em>(Leadership IQ)</em></span></div>
+            <div class="stat"><strong>700 000 ₽</strong><span>средняя цена ошибки найма <em>(hh.ru)</em></span></div>
+            <div class="stat"><strong>30%</strong><span>уходят в первые 90 дней <em>(SHRM)</em></span></div>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="mockup mockup--dashboard">
+            <div class="mockup__bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="mockup__title">Личный кабинет — Анализ интервью</span>
+            </div>
+            <div class="mockup__body">
+              <div class="upload-zone">
+                <div class="upload-zone__icon">↑</div>
+                <p>Перетащите запись интервью</p>
+                <span class="upload-zone__formats">MP3 · MP4 · Контур.Толк</span>
+                <div class="progress-bar"><div class="progress-bar__fill" style="width:78%"></div></div>
+                <span class="progress-label">Анализ: 78%</span>
+              </div>
+              <div class="candidate-list">
+                <div class="candidate-card candidate-card--active">
+                  <div class="candidate-card__avatar">АК</div>
+                  <div><strong>Алексей К.</strong><br><small>IT Project Manager</small></div>
+                  <span class="badge badge--green">77%</span>
+                </div>
+                <div class="candidate-card">
+                  <div class="candidate-card__avatar">МС</div>
+                  <div><strong>Мария С.</strong><br><small>Product Owner</small></div>
+                  <span class="badge">62%</span>
+                </div>
+                <div class="candidate-card">
+                  <div class="candidate-card__avatar">ДВ</div>
+                  <div><strong>Дмитрий В.</strong><br><small>Team Lead</small></div>
+                  <span class="badge">84%</span>
+                </div>
+              </div>
+            </div>
+            <div class="floating-badge">
+              <span>Культурная совместимость</span>
+              <strong>77%</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="trust-strip container">
+        <span>Интеграции:</span>
+        <div class="trust-logos">
+          <span>Хантфлоу</span>
+          <span>Talantix</span>
+          <span>Контур.Толк</span>
+          <span>152-ФЗ</span>
+          <span>Данные в РФ</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOCK 2: PROBLEM -->
+    <section class="section section--gray" id="problem">
+      <div class="container">
+        <div class="cost-banner">
+          <span class="cost-banner__label">Средняя цена ошибки найма</span>
+          <span class="cost-banner__value">700 000 ₽</span>
+        </div>
+        <h2>Каждый ошибочный найм стоит бизнесу сотни тысяч рублей</h2>
+        <p class="section-desc">По данным Leadership IQ, 89% неудачных наймов связаны с soft skills, а не с hard skills. SHRM фиксирует: 30% новых сотрудников уходят в первые 90 дней.</p>
+        <div class="cards-grid cards-grid--4">
+          <article class="pain-card">
+            <div class="pain-card__icon">⏱</div>
+            <h3>Рекрутеры тонут в рутине</h3>
+            <p class="pain-card__metric">~8 ч. на вакансию</p>
+            <p>Прослушивание записей, конспекты, согласования. До 40% рабочего времени уходит на повторяющиеся операции.</p>
+          </article>
+          <article class="pain-card">
+            <div class="pain-card__icon">🔗</div>
+            <h3>Контекст теряется между этапами</h3>
+            <p class="pain-card__metric">45+ дней Time-to-Hire</p>
+            <p>Записи лежат в облаках ВКС и почте. При финальном решении никто не помнит, что кандидат говорил на скрининге.</p>
+          </article>
+          <article class="pain-card">
+            <div class="pain-card__icon">⚖️</div>
+            <h3>Оценка зависит от интервьюера</h3>
+            <p class="pain-card__metric">1 оффер на 6 интервью</p>
+            <p>Один кандидат получает разную оценку от разных рекрутеров. Нет единой шкалы soft skills.</p>
+          </article>
+          <article class="pain-card">
+            <div class="pain-card__icon">🧩</div>
+            <h3>Культурное несоответствие не видно</h3>
+            <p class="pain-card__metric">~15% bad hires</p>
+            <p>Резюме и техинтервью не показывают, впишется ли человек в команду. Провалы выявляются после выхода на работу.</p>
+          </article>
+        </div>
+        <p class="transition-line">TalentMind переводит субъективные впечатления в измеримые данные — <strong>до подписания оффера</strong>.</p>
+      </div>
+    </section>
+
+    <!-- BLOCK 3: SOLUTION -->
+    <section class="section" id="product">
+      <div class="container">
+        <h2>От записи интервью до решения о найме — за 15 минут</h2>
+        <p class="section-desc">Три шага. TalentMind встраивается в существующую воронку без изменения HR-процессов.</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step__num">1</div>
+            <h3>Импорт данных</h3>
+            <p>Загрузите культурный код компании и записи интервью из Контур.Толк или ATS — Хантфлоу, Talantix.</p>
+          </div>
+          <div class="step__arrow">→</div>
+          <div class="step">
+            <div class="step__num">2</div>
+            <h3>Аналитическое ИИ-ядро</h3>
+            <p>Транскрипция, soft skills, психолингвистика и сопоставление с 54 параметрами ДНК компании. Данные анонимизируются до LLM.</p>
+          </div>
+          <div class="step__arrow">→</div>
+          <div class="step">
+            <div class="step__num">3</div>
+            <h3>Отчёты и оценки</h3>
+            <p>Процент совместимости, аргументы «за» и «против», карта рисков — готово для комитета по найму.</p>
+          </div>
+        </div>
+        <div class="pillars">
+          <article class="pillar">
+            <div class="pillar__icon">🎙</div>
+            <h3>Живые диалоги</h3>
+            <p>Оценка строится на том, как кандидат говорит и аргументирует в живом диалоге — не на самооценке в тесте.</p>
+          </article>
+          <article class="pillar">
+            <div class="pillar__icon">🤖</div>
+            <h3>ИИ-Копилот</h3>
+            <p>Чат-ассистент хранит контекст всех интервью. Спросите про любого кандидата — ответ за секунды.</p>
+          </article>
+          <article class="pillar">
+            <div class="pillar__icon">🧬</div>
+            <h3>Культурная совместимость</h3>
+            <p>54 параметра ДНК вашей организации. Сравнение с эталоном — не с усреднённой «рыночной нормой».</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOCK 4: AI ASSISTANT -->
+    <section class="section section--dark" id="assistant">
+      <div class="container assistant__grid">
+        <div class="assistant__info">
+          <h2>Спросите воронку — получите ответ за секунды</h2>
+          <p class="section-desc section-desc--light">ИИ-Ассистент знает контекст каждого интервью в вашей воронке. Больше не нужно переслушивать записи и искать заметки в ATS.</p>
+          <ul class="value-list">
+            <li><strong>−50% времени</strong> на подготовку к встречам с нанимающими менеджерами</li>
+            <li><strong>Автогенерация вопросов</strong> для финального интервью на основе выявленных рисков</li>
+            <li><strong>Нулевая потеря контекста</strong> между этапами воронки — от скрининга до оффера</li>
+          </ul>
+          <a href="#pricing" class="btn btn--primary">Попробовать на своих интервью</a>
+        </div>
+        <div class="chat-simulator" id="chatSimulator">
+          <div class="chat-simulator__header">
+            <div class="chat-simulator__avatar">AI</div>
+            <div>
+              <strong>ИИ-Ассистент TalentMind</strong>
+              <span class="status-online">● Онлайн</span>
+            </div>
+          </div>
+          <div class="chat-simulator__body">
+            <aside class="chat-sidebar">
+              <p class="chat-sidebar__title">Кандидаты</p>
+              <button class="chat-candidate chat-candidate--active" type="button">Алексей К.<br><small>IT Project Manager</small></button>
+              <button class="chat-candidate" type="button">Мария С.<br><small>Product Owner</small></button>
+              <button class="chat-candidate" type="button">Дмитрий В.<br><small>Team Lead</small></button>
+            </aside>
+            <div class="chat-main">
+              <div class="chat-messages" id="chatMessages">
+                <div class="chat-msg chat-msg--system">Выбран кандидат: Алексей К. · 2 интервью проанализировано</div>
+              </div>
+              <div class="chat-chips">
+                <button class="chip" data-scenario="leadership" type="button">Соответствие лидерскому профилю</button>
+                <button class="chip" data-scenario="risks" type="button">Риски адаптации</button>
+                <button class="chip" data-scenario="softskills" type="button">Подробнее про soft skills</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOCK 5: REPORT -->
+    <section class="section" id="report">
+      <div class="container">
+        <h2>Отчёт, с которым можно идти на комитет по найму</h2>
+        <p class="section-desc">Каждый анализ — структурированная карточка с аргументами, рисками и рекомендациями.</p>
+        <div class="report-card">
+          <div class="report-card__header">
+            <div class="report-card__avatar">АК</div>
+            <div>
+              <h3>Алексей К.</h3>
+              <p>IT Project Manager · 2 интервью · 12–15.04.2026</p>
+            </div>
+            <div class="report-score">
+              <svg viewBox="0 0 120 120" class="score-ring">
+                <circle cx="60" cy="60" r="52" class="score-ring__bg"/>
+                <circle cx="60" cy="60" r="52" class="score-ring__fill" style="--score: 77"/>
+              </svg>
+              <div class="report-score__text">
+                <strong>77%</strong>
+                <span>культурная совместимость</span>
+              </div>
+            </div>
+          </div>
+          <div class="report-tabs">
+            <button class="report-tab report-tab--active" data-tab="overview" type="button">Обзор</button>
+            <button class="report-tab" data-tab="softskills" type="button">Soft Skills</button>
+            <button class="report-tab" data-tab="risks" type="button">Риски</button>
+            <button class="report-tab" data-tab="psycho" type="button">Психолингвистика</button>
+          </div>
+          <div class="report-content">
+            <div class="report-panel report-panel--active" data-panel="overview">
+              <div class="pros-cons">
+                <div class="pros">
+                  <h4>✅ За</h4>
+                  <ul>
+                    <li>Опыт управления командой 8+ человек с измеримым результатом (time-to-market −23%)</li>
+                    <li>Высокая «мы-концепция» (68%) — соответствует параметру «Коллективная ответственность» (82% match)</li>
+                    <li>89% ответов в STAR-формате, чёткая аргументация с цифрами</li>
+                  </ul>
+                </div>
+                <div class="cons">
+                  <h4>❌ Против</h4>
+                  <ul>
+                    <li>Клиентоориентированность — 41% (порог: 60%). Жёсткая позиция в конфликтных сценариях</li>
+                    <li>Скорость решений ниже эталона: extended analysis vs культура «быстрых итераций»</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="report-panel" data-panel="softskills">
+              <div class="skills-grid">
+                <div class="skill"><span>Коммуникация</span><div class="skill__bar"><div style="width:80%"></div></div><strong>8/10</strong></div>
+                <div class="skill"><span>Критическое мышление</span><div class="skill__bar"><div style="width:70%"></div></div><strong>7/10</strong></div>
+                <div class="skill"><span>Лидерство</span><div class="skill__bar"><div style="width:70%"></div></div><strong>7/10</strong></div>
+                <div class="skill"><span>Адаптивность</span><div class="skill__bar"><div style="width:60%"></div></div><strong>6/10</strong></div>
+                <div class="skill"><span>Эмоциональный интеллект</span><div class="skill__bar"><div style="width:70%"></div></div><strong>7/10</strong></div>
+                <div class="skill"><span>Работа в команде</span><div class="skill__bar"><div style="width:80%"></div></div><strong>8/10</strong></div>
+              </div>
+            </div>
+            <div class="report-panel" data-panel="risks">
+              <table class="risks-table">
+                <thead><tr><th>Уровень</th><th>Риск</th><th>Описание</th></tr></thead>
+                <tbody>
+                  <tr><td><span class="risk-badge risk-badge--significant">Значительный</span></td><td>Адаптация к темпу</td><td>Предпочитает стабильные процессы. При agile-ритме возможен friction в первые 60–90 дней</td></tr>
+                  <tr><td><span class="risk-badge risk-badge--moderate">Умеренный</span></td><td>Стиль лидерства</td><td>Склонность к роли «ведущий эксперт» vs «фасилитатор» — проверить на финале</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="report-panel" data-panel="psycho">
+              <div class="psycho-blocks">
+                <div class="psycho-block">
+                  <h4>«Мы-концепция»: 68%</h4>
+                  <p>Кандидат говорит о командных результатах: <em>«Мы выстроили процесс»</em>, <em>«Наша команда сократила сроки»</em>. Позитивный индикатор для параметра «Коллективная ответственность».</p>
+                </div>
+                <div class="psycho-block">
+                  <h4>«Я-концепция»: 32%</h4>
+                  <p>В стрессовых сценариях доля «я-конструкций» возрастает до 54%: <em>«Я настоял»</em>, <em>«Я принял решение»</em>. Индикатор индивидуалистического стиля лидерства.</p>
+                </div>
+                <div class="psycho-block">
+                  <h4>Дополнительно</h4>
+                  <p>Доля конкретики (цифры, метрики): <strong>высокая</strong> (74%). Уровень неопределённости: <strong>низкий</strong> — редко использует «возможно», «наверное».</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOCK 6: ROI -->
+    <section class="section section--roi" id="roi">
+      <div class="container">
+        <h2>Экономия 10–12 млн ₽ в год при 100 наймах</h2>
+        <p class="section-desc section-desc--light">TalentMind окупается с первого месяца. Вот что меняется, когда решения принимаются на основе данных.</p>
+        <div class="roi-metrics">
+          <div class="roi-metric">
+            <h3>Время рекрутера на вакансию</h3>
+            <div class="roi-bar-pair">
+              <div class="roi-bar"><span class="roi-bar__label">До</span><div class="roi-bar__track"><div class="roi-bar__fill roi-bar__fill--before" style="width:100%"></div></div><span>~8 ч.</span></div>
+              <div class="roi-bar"><span class="roi-bar__label">После</span><div class="roi-bar__track"><div class="roi-bar__fill roi-bar__fill--after" style="width:56%"></div></div><span>~4,5 ч.</span></div>
+            </div>
+            <p>−40% трудозатрат. ИИ берёт на себя прослушивание и первичный скоринг.</p>
+          </div>
+          <div class="roi-metric">
+            <h3>Time-to-Hire</h3>
+            <div class="roi-bar-pair">
+              <div class="roi-bar"><span class="roi-bar__label">До</span><div class="roi-bar__track"><div class="roi-bar__fill roi-bar__fill--before" style="width:100%"></div></div><span>~45 дней</span></div>
+              <div class="roi-bar"><span class="roi-bar__label">После</span><div class="roi-bar__track"><div class="roi-bar__fill roi-bar__fill--after" style="width:67%"></div></div><span>~30 дней</span></div>
+            </div>
+            <p>−33% срок закрытия вакансии. Мгновенный доступ к аналитике ускоряет согласования.</p>
+          </div>
+          <div class="roi-metric">
+            <h3>Конверсия интервью → оффер</h3>
+            <div class="roi-compare">
+              <span class="roi-compare__before">1 : 6</span>
+              <span class="roi-compare__arrow">→</span>
+              <span class="roi-compare__after">1 : 3</span>
+            </div>
+            <p>×2 эффективность воронки. Точная оценка soft skills на ранних этапах.</p>
+          </div>
+          <div class="roi-metric">
+            <h3>Доля неудачных наймов</h3>
+            <div class="roi-bar-pair">
+              <div class="roi-bar"><span class="roi-bar__label">До</span><div class="roi-bar__track"><div class="roi-bar__fill roi-bar__fill--before" style="width:100%"></div></div><span>~15%</span></div>
+              <div class="roi-bar"><span class="roi-bar__label">После</span><div class="roi-bar__track"><div class="roi-bar__fill roi-bar__fill--after" style="width:67%"></div></div><span>~10%</span></div>
+            </div>
+            <p>−33% bad hires. Культурная совместимость выявляет риски до выхода на работу.</p>
+          </div>
+        </div>
+        <div class="roi-hero-number">
+          <span class="roi-hero-number__value" data-target="12000000">10–12 млн ₽</span>
+          <span class="roi-hero-number__label">ежегодная экономия при 100 наймах в год</span>
+          <p class="roi-hero-number__note">Экономия времени рекрутеров (~3,5 млн ₽) + сокращение стоимости bad hires (~5 млн ₽) + ускорение Time-to-Hire (~2–3,5 млн ₽)</p>
+        </div>
+        <div class="text-center">
+          <a href="#contacts" class="btn btn--primary btn--lg">Рассчитать ROI для вашей компании</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOCK 7: SECURITY -->
+    <section class="section" id="security">
+      <div class="container">
+        <h2>Безопасность уровня Enterprise — для банков и корпораций</h2>
+        <p class="section-desc">TalentMind разработан с учётом требований служб информационной безопасности. Персональные данные защищены на каждом этапе.</p>
+        <div class="deploy-cards">
+          <article class="deploy-card">
+            <div class="deploy-card__icon">☁️</div>
+            <h3>Облачное решение (SaaS)</h3>
+            <p class="deploy-card__for">Для компаний от 30 до 400 наймов в год</p>
+            <ul>
+              <li>Серверы в Российской Федерации</li>
+              <li>Анонимизация ФИО и контактов до отправки в LLM</li>
+              <li>Шифрование TLS 1.3 / AES-256</li>
+              <li>Полное соответствие 152-ФЗ</li>
+              <li>Данные не используются для обучения публичных моделей</li>
+            </ul>
+          </article>
+          <article class="deploy-card deploy-card--featured">
+            <div class="deploy-card__icon">🏢</div>
+            <h3>On-Premise развёртывание</h3>
+            <p class="deploy-card__for">Для Enterprise, банков, госкорпораций</p>
+            <ul>
+              <li>Установка в инфраструктуре клиента</li>
+              <li>Данные не покидают периметр организации</li>
+              <li>Интеграция с SSO и 1С</li>
+              <li>Кастомные SLA и выделенная поддержка</li>
+              <li>Аудит по требованиям ИБ заказчика</li>
+            </ul>
+          </article>
+        </div>
+        <div class="security-standards">
+          <div class="security-standard">
+            <div class="security-standard__icon">🛡</div>
+            <h4>152-ФЗ</h4>
+            <p>Полное соответствие закону «О персональных данных». Обработка и хранение ПДн — в правовом поле РФ.</p>
+          </div>
+          <div class="security-standard">
+            <div class="security-standard__icon">🔒</div>
+            <h4>Анонимизация</h4>
+            <p>ФИО, телефоны и email удаляются до передачи текста в языковую модель. В LLM попадает только обезличенный контент.</p>
+          </div>
+          <div class="security-standard">
+            <div class="security-standard__icon">🚫</div>
+            <h4>Защита от обучения</h4>
+            <p>Публичные модели не обучаются на ваших записях. Культурный профиль — интеллектуальная собственность клиента.</p>
+          </div>
+        </div>
+        <div class="data-flow">
+          <span>Запись интервью</span>
+          <span class="data-flow__arrow">→</span>
+          <span>Анонимизация</span>
+          <span class="data-flow__arrow">→</span>
+          <span>LLM в РФ</span>
+          <span class="data-flow__arrow">→</span>
+          <span>Отчёт</span>
+        </div>
+        <p class="security-note">Готовы предоставить документацию для службы ИБ вашей компании по запросу.</p>
+      </div>
+    </section>
+
+    <!-- BLOCK 8: PRICING -->
+    <section class="section section--pricing" id="pricing">
+      <div class="container">
+        <div class="free-banner">
+          🎁 <strong>5 интервью бесплатно</strong> — зарегистрируйтесь и протестируйте на реальных записях. Без привязки карты.
+        </div>
+        <h2>Начните с 5 бесплатных интервью. Масштабируйтесь по мере роста.</h2>
+        <p class="section-desc">Единичные оценки, командная работа или корпоративное внедрение — без скрытых платежей.</p>
+        <div class="pricing-grid">
+          <article class="price-card">
+            <h3>STARTER</h3>
+            <div class="price-card__price"><span>14 900 ₽</span> / мес</div>
+            <p class="price-card__volume">до 30 интервью</p>
+            <ul>
+              <li>Анализ soft skills</li>
+              <li>Базовый культурный профиль</li>
+              <li>Отчёт по кандидату</li>
+              <li>Загрузка MP3/MP4</li>
+            </ul>
+            <a href="#contacts" class="btn btn--outline btn--block">Начать бесплатно</a>
+          </article>
+          <article class="price-card price-card--popular">
+            <span class="price-card__badge">Популярный</span>
+            <h3>GROWTH</h3>
+            <div class="price-card__price"><span>44 900 ₽</span> / мес</div>
+            <p class="price-card__volume">до 100 интервью</p>
+            <ul>
+              <li>Всё из STARTER</li>
+              <li>ИИ-Ассистент</li>
+              <li>Хантфлоу · Talantix</li>
+              <li>Контур.Толк</li>
+              <li>54 параметра культуры</li>
+            </ul>
+            <a href="#contacts" class="btn btn--primary btn--block">Начать бесплатно</a>
+          </article>
+          <article class="price-card">
+            <h3>SCALE</h3>
+            <div class="price-card__price"><span>169 900 ₽</span> / мес</div>
+            <p class="price-card__volume">до 400 интервью</p>
+            <ul>
+              <li>Всё из GROWTH</li>
+              <li>Кастомная модель культуры</li>
+              <li>API для интеграций</li>
+              <li>Мульти-доступ и роли</li>
+              <li>Выделенный менеджер</li>
+            </ul>
+            <a href="#contacts" class="btn btn--outline btn--block">Начать бесплатно</a>
+          </article>
+          <article class="price-card">
+            <h3>ENTERPRISE</h3>
+            <div class="price-card__price"><span>Индивидуально</span></div>
+            <p class="price-card__volume">безлимит</p>
+            <ul>
+              <li>Всё из SCALE</li>
+              <li>On-Premise</li>
+              <li>1С · SSO · кастом ATS</li>
+              <li>SLA 99,9%</li>
+              <li>Аудит ИБ</li>
+            </ul>
+            <a href="#contacts" class="btn btn--outline btn--block">Связаться с нами</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOCK 9: CONTACTS + CTA -->
+    <section class="section section--cta" id="contacts">
+      <div class="container">
+        <h2>Начните нанимать лучших с первого дня</h2>
+        <p>5 интервью бесплатно. Без привязки карты. Подключение за 15 минут.</p>
+        <div class="cta-actions">
+          <a href="mailto:info@talentmind.ru" class="btn btn--primary btn--lg">Получить 5 интервью бесплатно</a>
+          <a href="tel:+74955405179" class="btn btn--white btn--lg">Записаться на демо</a>
+        </div>
+        <div class="contacts-grid">
+          <div class="contact-item">
+            <span class="contact-item__label">Сайт</span>
+            <a href="https://talentmind.ru">talentmind.ru</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-item__label">Email</span>
+            <a href="mailto:info@talentmind.ru">info@talentmind.ru</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-item__label">Telegram</span>
+            <a href="https://t.me/talentmind" target="_blank" rel="noopener">@talentmind</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-item__label">Телефон</span>
+            <a href="tel:+74955405179">+7 (495) 540-51-79</a>
+          </div>
+        </div>
+        <p class="contacts-note">Ответим на вопросы о продукте, проведём демо-презентацию и поможем рассчитать ROI для вашей компании.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#" class="logo">
+          <span class="logo__mark">TM</span>
+          <span class="logo__text">TalentMind</span>
+        </a>
+        <p>ИИ-платформа оценки soft skills и культурной совместимости</p>
+      </div>
+      <div class="footer__col">
+        <h4>Продукт</h4>
+        <a href="#product">Как работает</a>
+        <a href="#assistant">ИИ-Ассистент</a>
+        <a href="#report">Отчёты</a>
+        <a href="#roi">ROI</a>
+      </div>
+      <div class="footer__col">
+        <h4>Компания</h4>
+        <a href="#pricing">Тарифы</a>
+        <a href="#security">Безопасность</a>
+        <a href="#contacts">Контакты</a>
+        <a href="https://t.me/talentmind" target="_blank" rel="noopener">Telegram</a>
+      </div>
+      <div class="footer__col">
+        <h4>Правовая информация</h4>
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Публичная оферта</a>
+        <span>152-ФЗ</span>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 ООО «Вебпрактик». Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>

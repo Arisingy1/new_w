@@ -1,0 +1,14 @@
+{
+  "name": "talentmind-landing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Лендинг ИИ-платформы TalentMind",
+  "scripts": {
+    "dev": "serve .",
+    "build": "node -e \"console.log('Static site — сборка не требуется')\"",
+    "start": "serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}
